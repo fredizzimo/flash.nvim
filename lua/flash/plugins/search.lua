@@ -136,7 +136,7 @@ function M.jump(match, self)
 
   -- schedule a <cr> input to trigger the search
   vim.schedule(function()
-    vim.api.nvim_input(M.op and "<cr>" or "<esc>")
+    --vim.api.nvim_input(M.op and "<cr>" or "<esc>")
   end)
 
   -- restore the real search pattern after the search
